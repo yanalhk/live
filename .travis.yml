@@ -1,0 +1,23 @@
+sudo: required
+language : javascript
+node_js:
+  - 14
+dist: bionic
+services:
+  - docker
+before_install:
+    - docker pull humangeo/gitbook
+    - npm install
+
+script:
+    - eval "$(ssh-agent -s)"
+    - GITHUB_DEPLOY_KEY=`echo $GITHUB_DEPLOY_KEY_BASE64 | base64 --decode`
+    - ssh-add - <<< "${GITHUB_DEPLOY_KEY}"
+    - ./scripts/build-gitbook.sh
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: scripts/deploy-gh-pages.sh
+  on:
+    branch: main
