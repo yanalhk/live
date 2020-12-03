@@ -13,5 +13,9 @@ GITBOOK_DIR=`realpath ${BASE_DIR}/gitbook`
 GITBOOK_HTML_DIR=`realpath ${GITBOOK_DIR}/_book`
 
 pushd $GITBOOK_DIR
+if [ ! -d 'node_modules' ]
+then
+  docker run -ti --rm -v `pwd`:/docs humangeo/gitbook install
+fi
 docker run -ti --rm -v `pwd`:/docs humangeo/gitbook build
 popd
