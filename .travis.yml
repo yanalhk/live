@@ -14,8 +14,7 @@ script:
     - eval "$(ssh-agent -s)"
     - GITHUB_DEPLOY_KEY=`echo $GITHUB_DEPLOY_KEY_BASE64 | base64 --decode`
     - ssh-add - <<< "${GITHUB_DEPLOY_KEY}"
-    - ./scripts/build-gitbook.sh
-    - sudo chmod a+w gitbook/_book
+    - sudo -E ./scripts/build-gitbook.sh
 
 deploy:
   provider: script
