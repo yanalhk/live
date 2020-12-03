@@ -2,7 +2,7 @@
     "plugins": ["sitemap"],
     "pluginsConfig": {
         "sitemap": {
-            "hostname": "https://"
+            "hostname": "https://yanalhk.github.io/live/"
         }
     }
 }
