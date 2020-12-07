@@ -1,5 +1,8 @@
 {
-    "plugins": ["sitemap"],
+    "plugins": [
+      "sitemap",
+      "-search"
+    ],
     "pluginsConfig": {
         "sitemap": {
             "hostname": "https://yanalhk.github.io/live/"
