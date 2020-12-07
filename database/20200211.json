@@ -1,0 +1,11 @@
+{
+  "messages": [
+    {
+      "id": "message3485",
+      "day": "20200211",
+      "time": "14:51:53",
+      "from": "法庭文字直播台",
+      "text": "<a href onclick=\"return ShowHashtag(\"高等法院第一庭\")\">#高等法院第一庭</a> <a href onclick=\"return ShowHashtag(\"保釋申請\")\">#保釋申請</a> <br><a href onclick=\"return ShowHashtag(\"陳慶偉法官\")\">#陳慶偉法官</a> <br><br>A1: 容<br>A2: 勞<br><br>控罪：暴動 (違反公安條例 第19條)<br><br>案情：被指於 11 月 18 日於在九龍油麻地彌敦道近窩打老道交界參與暴動 (支援理大)<br><br>法官<strong>拒絕</strong>准予申請人保釋<br><br>案件將於3月4日屯門裁判法院進行聆訊"
+    }
+  ]
+}
