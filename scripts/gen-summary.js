@@ -38,7 +38,7 @@ function run(gitbookFolder) {
 const summaryPrefix =
 `# Summary
 
-* [Introduction](README.md)
+* [法庭文字直播台轉播站](README.md)
 `
 
   const content = [];
