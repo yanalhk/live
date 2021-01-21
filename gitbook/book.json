@@ -1,7 +1,8 @@
 {
     "plugins": [
       "sitemap",
-      "-search"
+      "-search",
+      "search-pro"
     ],
     "pluginsConfig": {
         "sitemap": {
