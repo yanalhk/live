@@ -35,6 +35,8 @@ function run(gitbookFolder) {
     index.set(month, files);
   });
 
+  var revIndex = new Map([...index.entries()].reverse());
+  // console.log(revIndex)
 const summaryPrefix =
 `# Summary
 
@@ -44,7 +46,7 @@ const summaryPrefix =
   const content = [];
   content.push(summaryPrefix);
 
-  index.forEach( (value, key) => {
+  revIndex.forEach( (value, key) => {
     content.push(`* ${key}`)
 
     value.forEach( (md) => {
