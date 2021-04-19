@@ -5,7 +5,7 @@ done
 ./scripts/convert-to-markdown.js database gitbook
 ./scripts/gen-summary.js gitbook
 git add .
-NOW=$(date +"%m %b,%y")
+NOW=$(date +"%d %b,%y")
 git commit -m "Updated content $NOW"
 git branch -av
 while true; do
