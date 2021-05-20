@@ -1,6 +1,6 @@
 {
     "plugins": [
-      "sitemap",
+      "-sitemap",
       "-search",
       "search-pro"
     ],
