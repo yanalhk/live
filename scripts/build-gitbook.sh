@@ -21,6 +21,6 @@ then
 fi
 docker run -ti --rm -v `pwd`:/docs humangeo/gitbook build
 
-sed -i.bk 's/yanalhk.github.io/yanalhk.github.io\/live/g' $GITBOOK_HTML_DIR/sitemap.xml
-rm $GITBOOK_HTML_DIR/sitemap.xml.bk
+#sed -i.bk 's/yanalhk.github.io/yanalhk.github.io\/live/g' $GITBOOK_HTML_DIR/sitemap.xml
+#rm $GITBOOK_HTML_DIR/sitemap.xml.bk
 popd
